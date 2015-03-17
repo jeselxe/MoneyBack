@@ -1,0 +1,15 @@
+# -- General Info --------------------------------------------------------------
+host    : localhost
+port    : 8888
+timezone: Europe/Amsterdam
+timeout : 6000
+
+# -- Services ------------------------------------------------------------------
+mongo:
+  - name    : primary
+    host    : 127.0.0.1
+    port    : 27017
+    db      : persona
+
+appnima:
+	key		: NTRmNzhjM2ZiNmFmNzI5MjM0YzI3ZTA2OkpIeHlUUFh3dmZBYU5rMWZaaVcwVkwwMnZRMXNiNHo=

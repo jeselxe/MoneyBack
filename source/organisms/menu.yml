@@ -1,0 +1,34 @@
+children:
+  - Organism.Header:
+      children:
+        - Atom.Heading:
+            size: h1
+            value: Menú
+        - Molecule.Navigation:
+            children:
+              - Atom.Button:
+                  events:
+                    - touch
+                  path: back
+                  icon: angle-right
+            style: right
+  - Organism.Section:
+      children:
+        - Molecule.List:
+            children:
+              - Atom.Li:
+                  text: Inicio
+                  icon: home
+                  events:
+                    - touch
+                  callbacks: 
+                    - onInicioPressed
+              - Atom.Li:
+                  icon: user
+                  text: Perfil
+              - Atom.Li:
+                  icon: power
+                  text: Cerrar Sesión
+      id: menu_buttons
+id: menu
+method: prepend

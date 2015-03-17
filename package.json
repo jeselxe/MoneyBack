@@ -1,0 +1,23 @@
+{
+  "name": "moneyback",
+  "version": "1.0.0",
+  "description": "App de registro de deudas y pagos pendientes",
+  "author": "Jeselxe <jesusgallego@outlook.com>",
+  "homepage": "http://tapquo.com",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-header": "*",
+    "gulp-jasmine": "*",
+    "gulp-stylus": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-yml": "*"
+  },
+  "dependencies": {
+    "zenserver": "^1.2.26"
+  }
+}

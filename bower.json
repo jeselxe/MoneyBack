@@ -1,0 +1,8 @@
+{
+    "name": "moneyback",
+    "dependencies": {
+        "atoms" : "*",
+        "atoms-icons" : "*",
+        "hope" : "*"
+    }
+}
