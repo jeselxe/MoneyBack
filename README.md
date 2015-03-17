@@ -8,8 +8,10 @@ App made with atoms-app to have a list of debts
 	bower install
 	gulp init
 	gulp
-``
+```
 
 ### Start server
 
-node zen zen
+```bash
+	node zen zen
+```
