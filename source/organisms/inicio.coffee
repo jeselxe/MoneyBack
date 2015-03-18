@@ -11,7 +11,7 @@ class Atoms.Organism.Inicio extends Atoms.Organism.Article
 
   fetch: ->
     __.proxy("GET", "persona").then (error, value) ->
-      __.Entity.Persona.create persona for persona in (value.personas or [])
+      __.Entity.Persona.createOrUpdate persona for persona in (value.personas or [])
 
   addPerson: (event, dispatcher, hierarchy...) ->
     @new.newpersonform.clean()

@@ -19,6 +19,7 @@ class Atoms.Organism.Persona extends Atoms.Organism.Dialog
 		__.proxy("DELETE", "persona", @selected).then (error, value) =>
       if value
         do @hide
+        do __.Article.Inicio.fetch
         true
 
 	onFormSubmit: (event, dispatcher, hierarchy...) ->
@@ -26,6 +27,7 @@ class Atoms.Organism.Persona extends Atoms.Organism.Dialog
 	    __.proxy("PUT", "persona", dispatcher.value()).then (error, value) =>
 	      if value
 	        do @hide
+	        do __.Article.Inicio.fetch
 	        true
 
 new Atoms.Organism.Persona()
