@@ -25,7 +25,6 @@ Persona.statics.search = (filter) ->
   promise
 
 Persona.statics.searchOne = (query, limit = 0) ->
-  console.log query
   promise = new Hope.Promise()
   @find(query).limit(limit).exec (error, value) ->
     if limit is 1
@@ -41,13 +40,9 @@ Persona.methods.delete = ->
   promise
 
 Persona.methods.update = (attr) ->
-  console.log attr
-  console.log @name
   promise = new Hope.Promise()
   @debo = attr.debo if attr.debo
   @debe = attr.debe if attr.debe
-  console.log @debe
-  console.log @debo
   @save (error, value) -> promise.done error, value
   promise
 

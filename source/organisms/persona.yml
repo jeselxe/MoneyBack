@@ -1,0 +1,67 @@
+children:
+  - Organism.Header:
+      id: cabecera
+      children:
+        - Atom.Heading:
+            size: h1
+            value: MoneyBack
+            style: align right
+        - Molecule.Navigation:
+            children:
+              - Atom.Button:
+                  icon: close
+                  events:
+                    - touch
+                  callbacks:
+                    - onClose
+            style: align left
+  - Organism.Section:
+      style: padding
+      children:
+        - Molecule.Form:
+            id: personaForm
+            children:
+              - Atom.Input:
+                  id: name
+                  type: text
+                  name: name
+                  value: "nombre"
+              - Atom.Label:
+                  value: DEBE
+              - Atom.Input:
+                  id: debeLabel
+                  type: number
+                  name: debe
+                  value: "0"
+              - Atom.Label:
+                  value: DEBO
+              - Atom.Input:
+                  id: deboLabel
+                  type: number
+                  name: debo
+                  value: "0"
+              - Atom.Button:
+                  style: fluid accept
+                  icon: plus
+                  text: Editar
+                  id: editar
+                  events:
+                    - touch
+            events:
+              - submit
+      id: persona              
+  - Organism.Footer:
+      children:
+        - Molecule.Div:
+            children:
+              - Atom.Button:
+                  id: delete
+                  icon: trash
+                  text: "Borrar Persona"
+                  style: right
+                  events:
+                    - touch
+                  callbacks:
+                    - onDelete
+      id: footer
+id: persona

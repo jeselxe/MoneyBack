@@ -1,3 +1,5 @@
+"use strict"
+
 class Atoms.Organism.Inicio extends Atoms.Organism.Article
 
   @scaffold "assets/scaffold/inicio.json"
@@ -20,10 +22,9 @@ class Atoms.Organism.Inicio extends Atoms.Organism.Article
     __.proxy("GET", "persona").then (error, value) ->
       for persona in (value.personas or [])
         if persona.name is personaName
-          cargarDatosPersona persona
-
+          __.Dialog.Persona.show persona
     #@persona.personaForm.name.value personaName
-    Atoms.Url.path "inicio/persona"
+    #Atoms.Url.path "inicio/persona"
 
   cargarDatosPersona: (persona) ->
     @persona.personaForm.name.value persona.name
@@ -52,15 +53,6 @@ class Atoms.Organism.Inicio extends Atoms.Organism.Article
         if value
           __.Entity.Persona.create value.persona
           Atoms.Url.path "inicio/personas"
-
-  deletePerson: (event, dispatcher, hierarchy...) ->
-    name = @persona.personaForm.name.value()
-    objeto = @personas.personas.findBy "name", name
-    persona = objeto[0].entity.__proto__
-    __.proxy("DELETE", "persona", persona).then (error, value) ->
-      if value
-        Atoms.Url.path "inicio/personas"
-        __.Article.Inicio.fetch()
 
 
 
