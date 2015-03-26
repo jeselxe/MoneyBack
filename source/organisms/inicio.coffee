@@ -14,8 +14,9 @@ class Atoms.Organism.Inicio extends Atoms.Organism.Article
       __.Entity.Persona.createOrUpdate persona for persona in (value.personas or [])
 
   addPerson: (event, dispatcher, hierarchy...) ->
-    @new.newpersonform.clean()
-    Atoms.Url.path "inicio/new"
+    #@new.newpersonform.clean()
+    #Atoms.Url.path "inicio/new"
+    __.Dialog.Add.show dispatcher
 
   onSelectPersona: (event, dispatcher, hierarchy...) ->
     personaName = dispatcher.attributes.text

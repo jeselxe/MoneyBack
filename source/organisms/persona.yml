@@ -2,10 +2,6 @@ children:
   - Organism.Header:
       id: cabecera
       children:
-        - Atom.Heading:
-            size: h1
-            value: MoneyBack
-            style: align right
         - Molecule.Navigation:
             children:
               - Atom.Button:

@@ -1,0 +1,38 @@
+children:
+  - Organism.Header:
+      id: cabecera
+      children:
+        - Molecule.Navigation:
+            children:
+              - Atom.Button:
+                  icon: close
+                  events:
+                    - touch
+                  callbacks:
+                    - onClose
+            style: align left
+  - Organism.Section:
+      children:
+        - Molecule.Form:
+            children:
+              - Atom.Label:
+                  value: "Nombre:"
+                  style: "margin-top\n"
+              - Atom.Input:
+                  type: text
+                  name: name
+                  placeholder: Introduce aquí el nombre
+                  required: true
+                  style: "margin-top\nmargin-bottom"
+                  id: newnombre
+              - Atom.Button:
+                  events:
+                    - touch
+                  text: Añadir
+                  style: "fluid\naccept\nmargin-top"
+            events:
+              - submit
+            id: newpersonform
+      id: new
+      style: padding
+id: add
