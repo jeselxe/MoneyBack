@@ -5,7 +5,7 @@ class Atoms.Organism.Menu extends Atoms.Organism.Aside
 
   # -- Children bubble events --------------------------------------------------
   onButtonTouch: (event, dispatcher, hierarchy...) ->
-    # Your code....................Jesus
+    # Your code...
 
   onInicioPressed: (event, dispatcher, hierarchy...) ->
   	Atoms.Url.path "inicio/personas"
