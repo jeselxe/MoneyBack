@@ -7,7 +7,6 @@ App made with atoms-app to have a list of debts
 	$ npm install
 	$ bower install
 	$ gulp init
-	$ gulp
 ```
 
 ### Start server
@@ -15,3 +14,14 @@ App made with atoms-app to have a list of debts
 ```bash
 	$ node zen zen
 ```
+
+It has to be running a MongoDB server to connect to it.
+
+## Run it
+
+```bash
+	$ gulp
+```
+
+and then <a href="http://localhost:8000">http://localhost:8000</a>
+
