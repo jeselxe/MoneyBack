@@ -5,6 +5,7 @@
   "author": "Jeselxe <jesusgallego@outlook.com>",
   "homepage": "http://tapquo.com",
   "license": "MIT",
+  "main": "www",
   "scripts": {
     "start" : "node zen zen"
   },
