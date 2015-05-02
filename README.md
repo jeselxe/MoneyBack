@@ -1,5 +1,5 @@
 # MoneyBack
-App made with atoms-app to have a list of debts
+App made with [atoms-app](https://github.com/tapquo/atoms-app) to have a list of debts
 
 ## Install
 
