@@ -3,7 +3,7 @@ api:
   - persona
 
 # -- Environment ---------------------------------------------------------------
-environment: development
+environment: production
 
 # -- CORS Properties -----------------------------------------------------------
 headers:

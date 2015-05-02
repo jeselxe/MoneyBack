@@ -7,9 +7,11 @@ timeout : 6000
 # -- Services ------------------------------------------------------------------
 mongo:
   - name    : primary
-    host    : 127.0.0.1
-    port    : 27017
+    host    : ds027698.mongolab.com
+    port    : 27698
     db      : persona
+    user	: money
+    password: back
 
 #appnima:
 #	key		: NTRmNzhjM2ZiNmFmNzI5MjM0YzI3ZTA2OkpIeHlUUFh3dmZBYU5rMWZaaVcwVkwwMnZRMXNiNHo=

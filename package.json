@@ -5,6 +5,9 @@
   "author": "Jeselxe <jesusgallego@outlook.com>",
   "homepage": "http://tapquo.com",
   "license": "MIT",
+  "scripts": {
+    "start" : "node zen zen"
+  },
   "devDependencies": {
     "gulp": "*",
     "gulp-coffee": "*",
