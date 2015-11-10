@@ -7,7 +7,7 @@
   "license": "MIT",
   "main": "www",
   "scripts": {
-    "start" : "node zen zen"
+    "start": "node zen zen"
   },
   "devDependencies": {
     "gulp": "*",
@@ -22,6 +22,6 @@
     "gulp-yml": "*"
   },
   "dependencies": {
-    "zenserver": "^1.2.26"
+    "zenserver": "^1.7.9"
   }
 }
